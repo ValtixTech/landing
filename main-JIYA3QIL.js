@@ -68,8 +68,8 @@ ${n.map((r,o)=>`${o+1}) ${r.toString()}`).join(`
       <div class="valtix-swal-copy">
         <p>Tu solicitud para <strong>${this.displayProductName}</strong> fue registrada correctamente.</p>
         <p>Te enviaremos los accesos e indicaciones al correo:</p>
-        <p class="valtix-swal-email">${this.adminEmail.trim()}</p>
-        <p class="valtix-swal-note">Revisa tambi\xE9n spam o promociones si no lo ves en unos minutos.</p>
+        <p class="valtix-swal-email" style="font-weight: bold; color: #00d2ff; background: rgba(0, 210, 255, 0.1); padding: 8px; border-radius: 4px;">${this.adminEmail.trim()}</p>
+        <p class="valtix-swal-note" style="font-size: 0.85rem; opacity: 0.7;">Revisa tambi\xE9n spam o promociones si no lo ves en unos minutos.</p>
       </div>
     `,confirmButtonText:"Entendido",customClass:{popup:"valtix-swal-popup",confirmButton:"valtix-swal-confirm"},buttonsStyling:!1}),this.companyName="",this.adminEmail="",this.password=""}async mostrarAlertaCipherDrop(t){await Vl.default.fire({icon:"success",title:"\xA1Infraestructura Aprovisionada!",html:`
         <div class="valtix-swal-copy">
