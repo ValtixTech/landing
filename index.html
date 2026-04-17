@@ -32,6 +32,36 @@
 
 <body>
   <app-root></app-root>
+
+  <!-- ========================================== -->
+  <!-- BANNER DE COOKIES (Requisito Legal B2B) -->
+  <!-- ========================================== -->
+  <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/cookieconsent@3/build/cookieconsent.min.css">
+  <script src="https://cdn.jsdelivr.net/npm/cookieconsent@3/build/cookieconsent.min.js" data-cfasync="false"></script>
+  <script>
+    window.addEventListener("load", function () {
+      window.cookieconsent.initialise({
+        "palette": {
+          "popup": {
+            "background": "#0A192F", /* Tu azul ultra-oscuro */
+            "text": "#ffffff"
+          },
+          "button": {
+            "background": "#17b2ff", /* Tu botón primario */
+            "text": "#081121"
+          }
+        },
+        "position": "bottom",
+        "content": {
+          "message": "En Valtix Technologies utilizamos cookies y herramientas de analítica web para mejorar su experiencia y garantizar la seguridad de nuestra plataforma.",
+          "dismiss": "Aceptar",
+          "link": "Leer Política de Privacidad",
+          "href": "/privacidad" /* El enlace a tu página legal */
+        }
+      })
+    });
+  </script>
+
 <script src="main-QTD3LYH7.js" type="module"></script></body>
 
 </html>
